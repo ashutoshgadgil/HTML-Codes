@@ -1,0 +1,27 @@
+body
+{
+    
+    /*background-image: url(Kangaroo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 300px;
+    */
+    
+    /* shorthand Property */
+    
+    background: url(koala.jpg) fixed no-repeat center;
+    background-size: 500px;
+    
+    font-family: monospace;
+    /*font-style: italic;
+    /*font-variant: small-caps;
+    */
+    font-weight: 800;    
+    font-size:15;
+    
+    font-size-adjust: 1;
+    font-stretch:condensed;   
+}
+
+

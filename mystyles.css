@@ -1,0 +1,21 @@
+/*body
+{
+    background-color: lightblue;
+    color: red;
+}
+*/
+h1
+{
+    color: darkmagenta;
+    background-color: yellow;
+}
+
+input
+{
+    background-color: bisque;
+}
+
+input#id1
+{
+    background-color: lightcoral;
+}

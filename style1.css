@@ -1,0 +1,23 @@
+div
+{
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 2px solid red;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+p
+{
+    border: 2px solid red;
+    margin: 25px 50px 75px 100px;
+    line-height: 25px;
+}
+
+div.cl1
+{
+    padding-left: 200px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
