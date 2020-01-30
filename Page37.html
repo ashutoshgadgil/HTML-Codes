@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    Enter name : <input type="text" id="text">
+    <input type="button" onclick="showName()" value="Show">
+    
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+    <p id="i4"></p>
+    <p id="i5"></p>
+    <p id="i6"></p>
+    <p id="i7"></p>
+    <script>
+    function showName()
+    {
+        var n=document.getElementById('text').value;
+        document.getElementById('i1').innerHTML="Your name is :"+n;
+        document.getElementById('i2').innerHTML="Length :"+n.length;
+        document.getElementById('i3').innerHTML="Name in Capital  :"+n.toUpperCase();
+        document.getElementById('i4').innerHTML="Name in Lower case  :"+n.toLowerCase();
+        document.getElementById('i5').innerHTML="Full Name :"+n.concat('Gadgil');
+        document.getElementById('i6').innerHTML="Char At 2  :"+n.charAt(2);
+        document.getElementById('i7').innerHTML="Starts with A  :"+n.startsWith("A");
+    }
+</script>    
+</body>
+</html>

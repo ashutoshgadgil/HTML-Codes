@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+    function printIt()
+    {
+        var num=document.getElementById('t1').value;
+        var i=0;                      // i is loop control variable
+        while(i<num)                  // while loop
+            {
+                document.write('Welcome<br>');
+                i++;                  // increment in i
+            }
+    }
+</script> 
+<style>
+    input 
+    {
+        background-color: aquamarine;           
+    }
+   
+</style>
+</head>
+
+    <body>
+    <input type="text" id="t1">
+    <input type="button" onclick="printIt()" value="Print">
+        
+    </body>
+</html>

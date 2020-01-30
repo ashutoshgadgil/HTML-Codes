@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>     
+<script>
+    $(document).ready(function(){
+         $("#i1").click(function(){  
+            $("ul li:first-child").css("color","red");
+        
+       }); 
+    });
+    
+   
+    $(document).ready(function(){
+         $("#i2").click(function(){  
+            $("ul li:first-child").css("color","Green");
+        
+       }); 
+    });
+</script>
+</head>
+
+    <body>
+        <ul>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+        </ul>
+        <button id="i1">Click</button>
+        <button id="i2">Click</button>
+    </body>
+</html>

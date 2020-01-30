@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+    function getResult()
+    {
+        var g=document.getElementById('gr').value;
+        
+        switch(g)
+            {
+                case 'A':
+                    alert('Congrats, You got Above 90 %');
+                    break;
+                case 'B':
+                    alert('Good, You got Above 80 %');
+                    break;
+                default:
+                    alert('Try Again');
+            }
+    }
+    
+</script>    
+</head>
+
+    <body>
+    
+    <label>Enter Grade :</label>
+        <input type="text" id="gr">
+        <input type="button" onclick="getResult()" value="Get Result">
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+h3
+    {
+        color: green;
+    }
+h3#a2
+    {
+        color: red;
+    }
+</style>
+<script>
+   function checkAns()
+    {
+        var v1=document.getElementById('i2').checked;
+       
+        if(v1)
+            document.getElementById('a1').innerHTML="Correct Answer";
+        else
+            document.getElementById('a1').innerHTML="<font color=red>Incorrect Answer</font>";
+    }
+</script>    
+</head>
+<body>
+<label>JVM is the concept of which language ?</label>
+<br/><input type="radio" name="answers" value="C++" id="i1">C++
+<br/><input type="radio" name="answers" value="Java" id="i2">Java
+<br/><input type="radio" name="answers" value="VB" id="i3">VB
+<br/><input type="radio" name="answers" value="PHP" id="i4">PHP
+
+    <br/><h3 id="a1"></h3>
+   
+<button onclick="checkAns()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+
+<style>
+    div
+    {
+        background-color: red;
+        height: 100px;
+        width: 300px;
+    }
+</style>
+<script>
+
+          $(document).ready(function(){
+            /* $("#id1").click(function(){
+                $("div").fadeOut(4000); 
+             }); 
+              
+               $("#id2").click(function(){
+                $("div").fadeIn(4000); 
+             });
+             */
+              
+              $("button").click(function(){
+                  $("#i1").fadeToggle();
+              });
+              
+              $(this).click(function(){
+                  $("#i2").fadeToggle(); 
+              });
+          }); 
+  
+</script>    
+</head>
+<body>
+
+
+<div id="i1">Welcome</div>
+<p id="i2">Hello</p>
+<button>Show/Hide</button>
+    
+   <!-- <button id="id1">FadeOut</button>
+    <button id="id2">FadeIn</button>-->
+</body>
+</html>

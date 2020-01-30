@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+<style>
+button
+    {
+        font-size: 20px;
+        width: 250px;
+        color: brown;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+       $("input").focus(function(){
+           $(this).css("background-color","lightblue");
+       });
+    
+       $("input").blur(function(){
+           $(this).css("background-color","white");
+       });
+    });
+    
+    
+
+</script>
+</head>
+
+    <body>
+        <input type="text">
+           <button>Click</button>
+    </body>
+</html>

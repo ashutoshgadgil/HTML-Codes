@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script>
+    function changeIt(col)
+        {
+            if(col=="Red")
+                document.getElementById('i1').style.backgroundColor="Red";
+            else if(col=="Blue")
+                document.getElementById('i2').style.color="Blue";
+            else if(col=="Green")
+                document.body.style.backgroundColor="Green";
+            else
+                document.body.style.backgroundColor="Black";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="i1">Heading</h1>
+    <p id="i2">Paragraph</p>
+    
+   
+    <script>changeIt("Cyan");</script>
+</body>
+</html>

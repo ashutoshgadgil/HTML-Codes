@@ -1,0 +1,43 @@
+<html>
+<head>
+<!--<script type="text/javascript" src="file1.js"></script>-->
+<script>
+    function f()
+    {
+        var numbers=[10,20,30,40,50];   // Array initialization
+        
+        document.write(numbers);
+        var i;
+        var sum=0;
+        var average;
+        for(i=0;i<numbers.length;i++)
+            {
+                sum=sum+numbers[i];
+                document.write("<br>"+numbers[i]);  // Accessing of Array     elements
+            }
+        alert("Average : "+sum/numbers.length);
+        
+        var fruits=["Orange","Mango","Banana"];
+        
+        document.write("<ol>");
+        for(i=0;i<fruits.length;i++)
+            {
+               
+                document.write("<li>"+fruits[i]+"</li>");  // Accessing of Array     elements
+            }
+        document.write("</ol>");
+        
+    }
+</script>  
+    
+<!--<link rel="stylesheet" href="mystyles.css"> -->
+
+</head>
+
+    <body>
+        <h1>Introduction</h1>
+        <script>
+        f();
+        </script>
+    </body>
+</html>

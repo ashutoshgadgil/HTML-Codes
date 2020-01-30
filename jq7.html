@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>     
+<script>
+    $(document).ready(function(){
+       $("button").click(function(){
+       
+       $("ul li:first-child").hide();  // hides the first element of every unordered list
+       }); 
+    });
+</script>
+</head>
+
+    <body>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+    
+        <ul>
+        <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+        </ul>
+        
+        <ul>
+        <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        
+        <button>Click</button>
+    </body>
+</html>

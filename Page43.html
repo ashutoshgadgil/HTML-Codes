@@ -1,0 +1,44 @@
+<html>
+<head>
+  
+    <style>
+    input.button
+        {
+            border-radius: 25px;
+            background-color: antiquewhite;
+        }
+    
+    </style>
+    <script>
+      
+        function showData()
+        {
+           var nm=document.getElementById('nm').value;
+           var ag=document.getElementById('ag').value;
+           var cy=document.getElementById('cy').value;
+            
+           //alert("Name : "+nm+" Age  :"+ag+" City : "+cy);
+            var status=confirm("Do you want to submit ?");
+            if(status)
+                alert("You Pressed OK");
+            else
+                alert("You Pressed Cancel");
+        }
+    </script>
+    </head>
+    
+    <body>
+          <form action="Form.html" method="get">      
+            <input type="text" name="nm" id="nm">
+            <input type="text" name="ag" id="ag">
+            <select name="cy" id="cy">
+            <option value="Delhi">Delhi</option>  
+            <option value="Mumbai">Mumbai</option> 
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Pune">Pune</option> 
+            </select>
+              
+            <input type="button" onclick="showData()" value="Submit" class="button">
+          </form>
+    </body>
+</html>

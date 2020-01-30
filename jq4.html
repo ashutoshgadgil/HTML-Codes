@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>     
+<script>
+    $(document).ready(function(){
+       $(".id1").click(function(){
+         // $("*").hide();    // Universal selector
+            $(this).hide();   // this represents current element                      
+       }); 
+    });
+</script>
+</head>
+
+    <body>
+        <h1 class="id1">Heading1</h1>
+        <div class="id1">Division</div>
+        <p class="id1">Paragraph1</p>
+        <p>Paragraph2</p>
+        <button>Click</button>
+    </body>
+</html>

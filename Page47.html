@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+    class student                 // Class of JavaScript
+        {
+            getDetails(roll,name)   // methods of Javascript
+            {
+                this.roll=roll;     // Setting members value using this keyword
+                this.name=name;
+            }
+            
+            showDetails()
+            {
+                document.write("Roll : "+this.roll);
+                document.write("Name : "+this.name);
+            }
+        }
+    
+    function data()
+    {
+     var s=new student();     // Object Creation statement
+     var r=document.getElementById('r').value;
+     var n=document.getElementById('nm').value;
+     s.getDetails(r,n);
+     s.showDetails();
+    }
+</script>    
+</head>
+<body>
+  <label>Roll No</label><input type="text" name="r" id="r"><br/>
+  <label>Name</label><input type="text" name="nm" id="nm"><br/>
+  <button onclick="data()">Submit</button>  
+</body>
+</html>

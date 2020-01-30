@@ -1,0 +1,13 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<FullName>
+<FirstName>Amit</FirstName>
+<LastName>Sharma</LastName>
+</FullName>
+
+<Address>
+<flatno>f4</flatno>
+<street>xyz</street>
+    <city>Pune</city>
+    <state>MH</state>
+</Address>

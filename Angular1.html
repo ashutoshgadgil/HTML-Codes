@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+</head>
+
+<body>
+<div ng-app="">   <!-- Defines the Angular Application scope in Div tag -->
+    Enter name<input type="text" ng-model="fullname">
+    <!-- ng-model is binding the entered name in text box to the fullname that is an Application variable / Angular Application variable -->
+    <!-- fullname is an Angular Application variable-->
+    
+    <p ng-bind="fullname"></p> 
+    <div ng-bind="fullname"></div>
+    <!-- ng-bind is binding the value of Angular Apllication variable to the HTML view in paragraph tag-->
+    
+</div>
+
+</body>
+</html>

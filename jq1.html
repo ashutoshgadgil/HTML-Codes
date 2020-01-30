@@ -1,0 +1,32 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    
+<script>
+    $(document).ready(function(){
+       $("#b1").click(function(){
+         $("p").hide();  
+       });
+    });
+    
+    $(document).ready(function(){
+       $("#b2").click(function(){
+          $("p").show(); 
+       }); 
+    });
+   
+</script>    
+</head>
+    <body>
+    <p id="p1" style="width:80px;height:80px;display:none;background-color:red;">Hello</p>
+        
+
+        <button id="b1">hide</button>
+        <button id="b2">Show</button>
+        <button id="b3">Click</button>
+        <button id="button1">fade</button>
+    </body>
+</html>

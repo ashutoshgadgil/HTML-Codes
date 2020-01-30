@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+    function changeBackground()
+    {
+        if(document.getElementsByName('col').value="red")
+            document.body.style.backgroundColor="red";
+        else if(document.getElementById('col').value="green")
+            document.body.style.backgroundColor="green";
+    }
+    
+</script>    
+</head>
+<body>
+<label>Red</label>
+<input type="radio" onclick="changeBackground()" name="col" id="r" value="red">
+
+<label>Green</label>
+<input type="radio" onclick="changeBackground()" name="col" id="g" value="green">
+  
+<label>Blue</label>
+<input type="radio" onclick="changeBackground()" name="col" id="b" value="blue">
+
+</body>
+</html>

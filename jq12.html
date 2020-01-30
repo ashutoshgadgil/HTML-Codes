@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+<style>
+button
+    {
+        font-size: 20px;
+        width: 250px;
+        color: brown;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        
+            $("button").css("background-color","pink");   // Setting default  color for button at the time of loading JQuery Code
+       
+    });
+    
+    $(document).ready(function(){
+         $("button").mousedown(function(){  
+            $("button").css("background-color","Blue");
+        // changing button color when mouse button is pressed down
+       }); 
+    });
+    
+    $(document).ready(function(){
+         $("button").mouseover(function(){  
+            $("button").css("background-color","lightblue");
+       // changing button color when mouse is moved over button 
+       }); 
+    });
+    
+    $(document).ready(function(){
+         $("button").mouseup(function(){  
+            $("button").css("background-color","lightblue");
+        // changing button color when mouse is up
+       }); 
+    });
+
+</script>
+</head>
+
+    <body>
+           <button>Click</button>
+    </body>
+</html>

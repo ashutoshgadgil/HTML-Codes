@@ -1,0 +1,54 @@
+<!-- Two way Data Binding -->
+
+<html>
+<head>
+    
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>         
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+
+<script>
+    $(document).ready(function(){
+       $("input").focus(function(){
+          $(this).css("background-color","pink"); 
+       }); 
+        $("input").blur(function(){
+          $(this).css("background-color","white"); 
+       }); 
+    });
+</script>
+</head>
+
+<body>
+<div ng-app="app1" ng-controller="ctrl1">
+   First Name <input type="text" ng-model="fname"><br/>
+   Last Name <input type="text" ng-model="lname">
+   <h2>Full Name : {{fullname()}}</h2>
+   <h2>Length :<span ng-bind="len">{{len}}</span></h2>
+   <h2>Character at position 2 in First Name :<span ng-bind="chrat"></span></h2>
+</div>
+    
+
+<script>
+var app=angular.module("app1",[]);
+    
+    app.controller("ctrl1",function($scope){
+        $scope.fname="Sachin";
+        $scope.lname="Tendulkar";
+        $scope.fn=$scope.fname.concat($scope.lname);
+        $scope.len=$scope.fn.length+1;
+        
+        $scope.chrat=$scope.fn.charAt(2);
+        
+        $scope.fullname=function()     // Function Expression
+        {
+            return $scope.fname.toUpperCase()+" "+$scope.lname.toUpperCase();
+        }
+       
+       
+       
+    });
+</script>
+</body>
+</html>

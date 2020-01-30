@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+<style>
+button
+    {
+        font-size: 20px;
+        width: 250px;
+        color: brown;
+    }
+</style>
+<script>
+  $(document).ready(function(){
+  $("p").on({        // on event applies multiple effects on the same para 
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+});
+    
+
+</script>
+</head>
+
+    <body>
+        
+        <p>Mouse1</p>
+        
+        <p>Mouse1</p>
+        
+        <p>Mouse1</p>
+    </body>
+</html>

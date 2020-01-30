@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>     
+<script>
+    $(document).ready(function(){
+       $("button").click(function(){
+       
+           $("td:even").css("background-color","Green");
+           
+           //$(":button").hide();    // hides all buttons including input button
+          // $("a[target=_blank]").hide();
+        
+       //$("[href]").hide();     // selector which hides the hyperlinks on the page
+       }); 
+    });
+</script>
+</head>
+
+    <body>
+        <table border="1">
+        <tr><td>1</td><td>a</td></tr>
+        <tr><td>2</td><td>b</td></tr>
+        <tr><td>3</td><td>c</td></tr>
+        </table>
+        
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <a href="#" target="_blank">Link1</a>
+         <a href="#">Link2</a>
+        <ul>
+        <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+        </ul>
+        
+        <ul>
+        <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        
+        
+        <input type="button" value="Go">
+        <button>Click</button>
+    </body>
+</html>

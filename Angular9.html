@@ -1,0 +1,29 @@
+<!-- Two way Data Binding -->
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+</head>
+
+<body>
+<div ng-app="app1" ng-controller="ctrl1">
+   First Name <input type="text" ng-model="fname"><br/>
+   Last Name <input type="text" ng-model="lname">
+    <h2>Full Name : {{fullname()}}</h2>
+</div>
+    
+<script>
+var app=angular.module("app1",[]);
+    
+    app.controller("ctrl1",function($scope){
+        $scope.fname="Sachin";
+        $scope.lname="Tendulkar";
+       
+        $scope.fullname=function()     // Function Expression
+        {
+            return $scope.fname+" "+$scope.lname;
+        }
+    });
+</script>
+</body>
+</html>
